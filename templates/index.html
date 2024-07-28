@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Library System</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/add_book">Add Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add_member">Add Member</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/allocate">Allocate Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/de_allocate">Return Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/remove_book">Remove Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/remove_member">Remove Member</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Welcome to the Library Management System</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Add a Book</h2>
+                        <p><a href="/add_book" class="btn btn-primary">Add Book</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Add a Member</h2>
+                        <p><a href="/add_member" class="btn btn-primary">Add Member</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Allocate a Book</h2>
+                        <p><a href="/allocate" class="btn btn-primary">Allocate Book</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Return a Book</h2>
+                        <p><a href="/de_allocate" class="btn btn-danger">Return Book</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Remove a Book</h2>
+                        <p><a href="/remove_book" class="btn btn-danger">Remove Book</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2>Remove a Member</h2>
+                        <p><a href="/remove_member" class="btn btn-danger">Remove Member</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+</body>
+</html>
